@@ -32,7 +32,7 @@ public class PersonajeTest {
         // TODO Crea una función que cuente a todos los personajes que forman parte del staff de Howarts y que están vivos
         //
         // TODO comprueba que tu función devuelve el número correcto de elementos
-
+        Assertions.assertEquals(17, ej.getStaffVivos());
     }
 
     @Test
@@ -40,6 +40,8 @@ public class PersonajeTest {
         // TODO Crea una función que cuente a todos los personajes que forman parte del staff de Howarts y que están muertos
         //
         // TODO comprueba que tu función devuelve el número correcto de elementos
+
+        Assertions.assertEquals(8, ej.getStaffMuertos());
 
     }
 
@@ -49,6 +51,8 @@ public class PersonajeTest {
         //
         // TODO comprueba que tu función devuelve el número correcto de elementos
 
+        Assertions.assertEquals(250, ej.contieneLetra('a'));
+
     }
 
     @Test
@@ -57,7 +61,7 @@ public class PersonajeTest {
         //  en su nombre y están vivos
         //
         // TODO comprueba que tu función devuelve el número correcto de elementos
-
+        Assertions.assertEquals(4, ej.getPjVivosContienenCadena("otter").length);
     }
 
     @Test
@@ -67,5 +71,6 @@ public class PersonajeTest {
 
         // TODO comprueba que tu función devuelve el número correcto de elementos
 
+        Assertions.assertEquals(1, ej.getActorIgualCadena("Emma Watson").length);
     }
 }
